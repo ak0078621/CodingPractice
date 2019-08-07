@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void brutFullWayTimeComplexty()&apos; from &apos;pkg2.ArraySumIndices.main()&apos; to &apos;pkg2.ArraySumIndices&apos;&#x0D;&#x0A;- Original project: &apos;FizzBuzz&apos;&#x0D;&#x0A;- Method name: &apos;brutFullWayTimeComplexty&apos;&#x0D;&#x0A;- Destination type: &apos;pkg2.ArraySumIndices&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;brutFullWayTimeComplexty&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;pkg2{ArraySumIndices.java" name="brutFullWayTimeComplexty" replace="false" selection="124 471" stamp="1565141958254" version="1.0" visibility="2"/>
+</session>

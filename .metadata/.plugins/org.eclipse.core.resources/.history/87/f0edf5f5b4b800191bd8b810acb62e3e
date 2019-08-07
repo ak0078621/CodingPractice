@@ -1,0 +1,50 @@
+package pkg2;
+
+import java.util.Arrays;
+
+public class ArraySumIndices {
+
+	public static void main(String[] args) {
+		brutFullWayTimeComplexty();
+		lessTimeComplexity();
+
+	}
+
+	private static void lessTimeComplexity() {
+		Integer [] num = {2,7,11,22};
+		Integer [] targetIndices = new Integer[num.length];
+		int targetNum = 9;
+		int targetIndex = 0;
+		for(int i = 0;i<num.length-1;i++){
+			if(num[i]+num[i+1]==targetNum){
+				targetIndices[targetIndex] = i;
+				targetIndex++;
+				targetIndices[targetIndex] = i+1;
+				targetIndex++;
+			}
+		}
+		
+		System.out.println("The indices came as :: " + Arrays.deepToString(targetIndices));
+		
+	}
+
+	private static void brutFullWayTimeComplexty() {
+		Integer [] num = {2,7,11,22};
+		Integer [] targetIndices = new Integer[num.length];
+		int targetNum = 9;
+		int targetIndex = 0;
+		for(int i=0;i<=num.length-1;i++){
+			int rightSideDigit  = num[i];
+			for(int j =0;j<=num.length-1;j++){
+				if(rightSideDigit+num[j]==targetNum){
+					targetIndices[targetIndex] = i;
+					targetIndex++;
+				}
+			}
+			
+		}
+		
+		System.out.println("The indices came as :: " + Arrays.deepToString(targetIndices));
+	}
+
+}

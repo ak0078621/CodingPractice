@@ -1,0 +1,18 @@
+package pkg3;
+
+public class ReversingString {
+
+	public static void main(String[] args) {
+		String str = "Hello World!!!";
+		String reversedStrin=reversingStringUsingSB(str);
+		System.out.println("The reversed String came as :: " + reversedStrin);
+
+	}
+
+	private static String reversingStringUsingSB(String str) {
+		return new StringBuilder(str).reverse().toString();
+		
+		
+	}
+
+}

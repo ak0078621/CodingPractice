@@ -1,0 +1,17 @@
+package pkg3;
+
+public class ReversingString {
+
+	public static void main(String[] args) {
+		String str = "Hello World!!!";
+		String reversedStrin=reversingStringUsingSB(str);
+
+	}
+
+	private static String reversingStringUsingSB(String str) {
+		return new StringBuilder(str).reverse().toString();
+		
+		
+	}
+
+}
